@@ -1,0 +1,389 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@400;700&display=swap');
+
+/* Global */
+body {
+    font-family: 'Roboto', 'Playfair Display', 'Arial', 'Helvetica', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a.logo {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    line-height: 120%;
+    text-align: center;
+    font-weight: 900;
+    margin: 40px 0;
+    letter-spacing: 1px;
+}
+
+/* Header */
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+header li {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+header a:hover:not(.logo) {
+    color: #FF7931;
+}
+
+header a:active {
+    color: #000000;
+}
+
+/* Main */
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Big promo */
+.big_promo {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: #C4C4C4;
+    background-image: url("files/podvodniy_hotel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hotel_promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+}
+
+.central_icon {
+    margin-top: 20px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #FF7931;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central_icon:after {
+    content: url("img/Mountain.svg");
+}
+
+.promo_heading {
+    font-size: 5em;
+    line-height: 120%;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: 160px;
+}
+
+.big_promo p {
+    max-width: 450px;
+}
+
+/* Reviews */
+.reviews h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.reviews_section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.review {
+    max-width: 355px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.review h3 {
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 1.65em;
+}
+
+.review a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.review a:hover {
+    color: #FF7931;
+}
+
+.review a:active {
+    color: #000000;
+}
+
+/* Season tickets */
+.season_tickets {
+    margin-top: 40px;
+    background-color: #F7F7F7;
+    background: radial-gradient(circle, #ffffff 400px, #F7F7F7 400px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.season_tickets h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 40px;
+}
+
+.promos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.promo {
+    max-width: 370px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promo h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 1.65em;
+}
+
+.small_line {
+    margin: 20px auto;
+    width: 100px;
+    height: 1px;
+    opacity: 0.4;
+    background-color: rgba(0,0,0, 0.2);
+    transform: rotate(0.1deg);
+}
+
+.look_up_button {
+    width: 170px;
+    height: 50px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7931;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+.look_up_button:after {
+    content: url("img/Arrow\ forward.svg");
+    padding-left: 10px;
+}
+
+.look_up_button:hover {
+    transition: all 0.1s;
+    box-shadow: 5px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.look_up_button:active {
+    box-shadow: none;
+    outline: none;
+}
+
+.look_up_button:focus {
+    outline: none;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    color: #ffffff;
+    background-color: #575757;
+}
+
+footer a.logo {
+    font-size: 2em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+footer li {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover:not(.logo) {
+    color: #ff7a33;
+}
+
+footer a:active {
+    color: #ffffff;
+}
+
+.big_line {
+    margin: 40px auto;
+    width: 100%;
+    height: 1px;
+    opacity: 0.4;
+    background-color: #ffffff;
+    transform: rotate(0.1deg);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 7px;
+    margin-bottom: 40px;
+    width: 47px;
+    height: 47px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover:after {
+    filter: invert(52%) sepia(88%) saturate(1374%) hue-rotate(338deg) brightness(103%) contrast(101%);
+}
+
+a:active .icon:after {
+    filter: none;
+}
+
+.first_icon::after {
+    content: url("img/first.svg");
+    margin-top: 5px;
+}
+
+.second_icon::after {
+    content: url("img/second.svg");
+    margin-top: 5px;
+}
+
+.third_icon::after {
+    content: url("img/third.svg");
+    margin-top: 5px;
+}
+
+@media (max-width: 1370px) {
+    .reviews_section {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .review {
+        margin: auto;
+    }
+
+    .review p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 1080px) {
+    nav li {
+        flex-basis: 30%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .season_tickets {
+        background: radial-gradient(circle, #ffffff 0%, #F7F7F7 0%);
+    }
+
+    .promo_heading {
+        font-size: 3.6em;
+        height: auto;
+    }
+
+    .small_line {
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    nav li {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 375px) {
+    nav li {
+        font-size: 0.7em;
+    }
+}
