@@ -351,6 +351,9 @@ a:active .icon:after {
 
     .review p {
         text-align: justify;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
 }
 
@@ -383,7 +386,19 @@ a:active .icon:after {
 }
 
 @media (max-width: 375px) {
+    .logo {
+        font-size: 2em;
+    }
+
     nav li {
         font-size: 0.7em;
+    }
+
+    .promo_heading {
+        font-size: 3em;
+    }
+
+    .review img{
+        max-width: 300px;
     }
 }
