@@ -141,10 +141,9 @@ header a:active {
 
 .review {
     max-width: 355px;
-    margin: 5px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
 }
 
 .review h3 {
